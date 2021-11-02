@@ -6,10 +6,10 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="https://thejscott5.github.io/fhwebsite/assets/css/main.css"/>
-  <link rel="stylesheet" href="https://thejscott5.github.io/fhwebsite/assets/css/fontawesome-all.min.css"/>
+  <link rel="stylesheet" href="https://thejscott5.github.io/sandbox/assets/css/fontawesome-all.min.css"/>
 <link rel="stylesheet" href="https://thejscott5.github.io/sandbox/assets/tooltip/tooltip.css"/>	
     <noscript>
-		<link rel="stylesheet" href="https://thejscott5.github.io/fhwebsite/assets/css/noscript.css" />
+		<link rel="stylesheet" href="https://thejscott5.github.io/sandbox/assets/css/noscript.css" />
 	</noscript>
 </head>
 
@@ -47,13 +47,13 @@
 		<section id="banner">
 			<div class="inner">
 				<h2>First Hyperion</h2>
-				<h3>Values-Based,<br />
+				<h3>Values-Based,
 					Process Driven<br /></h3>
 					
 				<ul class="actions special">
 			
 				      
-		<p><strong>First Hyperion is committed to building lasting partnerships in distribution <br>by remaining true to who we are and what we believe.</strong><br><br>
+		<p style="display:block"><strong>First Hyperion is committed to building lasting partnerships in distribution by remaining true to who we are and what we believe.</strong><br><br>
 			Through a decentralized leadership approach, we unleash the entrepreneurial spirit of people pursuing their own wealth creation while preserving the invaluable legacy of family-owned businesses. At the core of First Hyperion’s business philosophy, we believe that shared success resides at the intersection of values and process. 
 </p></ul>
 			</div>
@@ -149,7 +149,9 @@ data-tooltip-location="right"> <b>We Improve the status quo by thinking differen
                                                                                 <li class="icon solid fa-thumbtack">
                                                                                                 <h3>Execute Exceptionally</h3>
                                                                                                
-                        <p data-tooltip="Know your role, goals, and responsibilities. Continuously measure the metrics that matter. Relentless pursuit of self-improvement. Take initiative to exceed customer expectations. Bring Enthusiasm." data-tooltip-location="right"><b>Create value through a shared commitment to excellence </b><i class="icon solid fas fa-arrow-circle-right"></i>
+                        <p class="popup" onclick="myFunction()"> <b>Create value through a shared commitment to excellence </b><i class="icon solid fas fa-arrow-circle-right"></i>
+ <span class="popuptext" id="myPopup"> Know your role, goals, and responsibilities. Continuously measure the metrics that matter. Relentless pursuit of self-improvement. Take initiative to exceed customer expectations. Bring Enthusiasm." 
+ </span>
 </p>
                                                                                 </li>
                                                                                 <!-- li class="icon solid fa-flask">
@@ -188,7 +190,10 @@ data-tooltip-location="right"> <b>We Improve the status quo by thinking differen
 			<ul class="copyright">
 				<li>&copy; First Hyperion</li>
 				<li>All Rights Reserved 2021</li>
-                <li><span class="icon solid fa-envelope"></span> contact@firsthyperion.com</li>
+                <li><!-- span class="icon solid fa-envelope"></span --> contact@firsthyperion.com</li>
+                <li><p class="hidden-p" id="p1">contact@firsthyperion.com</p>
+<i class="fa fa-envelope" type="button" href="#" role="button" onclick="copyToClipboard('p1')"></i>
+</li>
 			</ul>
 		</footer>
 
@@ -203,20 +208,116 @@ data-tooltip-location="right"> <b>We Improve the status quo by thinking differen
   }
 
 .features li:before {
-left: 4.75em;
+left: 0 em;
 top: 0.75em;
 }
-	</style> 
+
+.hidden-p {
+display: none;
+}
+
+	</style>
     
+<style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: relative;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 18px 0;
+  position: absolute;
+  z-index: 10;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -180px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 5;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:5 ;}
+}
+</style>
+
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+<script>
+function copyToClipboard(elementId) {
+
+  // Create a "hidden" input
+  var aux = document.createElement("input");
+
+  // Assign it the value of the specified element
+  aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+
+  // Append it to the body
+  document.body.appendChild(aux);
+
+  // Highlight its content
+  aux.select();
+
+  // Copy the highlighted text
+  document.execCommand("copy");
+
+  // Remove it from the body
+  document.body.removeChild(aux);
+
+}
+</script>
+
 	<!-- Scripts -->
     <script src="https://use.fontawesome.com/2ed27cbe98.js"></script>
-    <script src="https://thejscott5.github.io/fhwebsite/assets/js/jquery.min.js"></script>
-	<script src="https://thejscott5.github.io/fhwebsite/assets/js/jquery.scrollex.min.js"></script>
-	<script src="https://thejscott5.github.io/fhwebsite/assets/js/jquery.scrolly.min.js"></script>
-	<script src="https://thejscott5.github.io/fhwebsite/assets/js/browser.min.js"></script>
-	<script src="https://thejscott5.github.io/fhwebsite/assets/js/breakpoints.min.js"></script>
-	<script src="https://thejscott5.github.io/fhwebsite/assets/js/util.js"></script>
-	<script src="https://thejscott5.github.io/fhwebsite/assets/js/main.js"></script>
+    <script src="https://thejscott5.github.io/sandbox/assets/js/jquery.min.js"></script>
+	<script src="https://thejscott5.github.io/sandbox/assets/js/jquery.scrollex.min.js"></script>
+	<script src="https://thejscott5.github.io/sandbox/assets/js/jquery.scrolly.min.js"></script>
+	<script src="https://thejscott5.github.io/sandbox/assets/js/browser.min.js"></script>
+	<script src="https://thejscott5.github.io/sandbox/assets/js/breakpoints.min.js"></script>
+	<script src="https://thejscott5.github.io/sandbox/assets/js/util.js"></script>
+	<script src="https://thejscott5.github.io/sandbox/assets/js/main.js"></script>
 
 </body>
 
