@@ -150,14 +150,13 @@ data-tooltip-location="right"> <b>We Improve the status quo by thinking differen
                                                                                                 <h3>Execute Exceptionally</h3>
                                                                                                
                         <p class="popup" onclick="myFunction()"> <b>Create value through a shared commitment to excellence </b><i class="icon solid fas fa-arrow-circle-right"></i>
- <span class="popuptext" id="myPopup"> Know your role, goals, and responsibilities. Continuously measure the metrics that matter. Relentless pursuit of self-improvement. Take initiative to exceed customer expectations. Bring Enthusiasm." 
- </span>
+ <span class="popuptext" id="myPopup"> Know your role, goals, and responsibilities. Continuously measure the metrics that matter. Relentless pursuit of self-improvement. Take initiative to exceed customer expectations. Bring Enthusiasm.
 </p>
                                                                                 </li>
                                                                                 <!-- li class="icon solid fa-flask">
                                                                                                 <h3>Ex. Industry Focused</h3>
-                                                                                                <p><b>Another value would help symmetry</b><br>
-                        <i>Something something something about remaining true to the industry and evolving with it, re: technology, etc. </i><br>
+                                                                                               <p class="popup" onclick="myFunction()"> <b>Another value would help symmetry</b><i class="icon solid fas fa-arrow-circle-right"></i>
+                        <span class="popuptext" id="myPopup"> Something something something about remaining true to the industry and evolving with it, re: technology, etc.</span>
 </p>
                                                                                 </li -->
                                                                 </ul>
@@ -190,9 +189,9 @@ data-tooltip-location="right"> <b>We Improve the status quo by thinking differen
 			<ul class="copyright">
 				<li>&copy; First Hyperion</li>
 				<li>All Rights Reserved 2021</li>
-                <li><!-- span class="icon solid fa-envelope"></span --> contact@firsthyperion.com</li>
+                <li><i class="fa fa-envelope" type="button" href="#" role="button" onclick="copyToClipboard('p1')"></i> contact@firsthyperion.com</li>
                 <li><p class="hidden-p" id="p1">contact@firsthyperion.com</p>
-<i class="fa fa-envelope" type="button" href="#" role="button" onclick="copyToClipboard('p1')"></i>
+<!-- i class="fa fa-envelope" type="button" href="#" role="button" onclick="copyToClipboard('p1')"></i -->
 </li>
 			</ul>
 		</footer>
@@ -308,8 +307,10 @@ function copyToClipboard(elementId) {
 
   // Remove it from the body
   document.body.removeChild(aux);
-
+  
+  alert("contact@firsthyperion.com has been copied to your clipboard");
 }
+
 </script>
 
 	<!-- Scripts -->
