@@ -158,20 +158,7 @@
   transform-origin: bottom;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*** Settings that make the pen look nicer 
+/* Settings that make the pen look nicer */
 html {
   width: 100%;
   height: 100%;
@@ -361,5 +348,3 @@ Thumbnail settings
     border-width: 7px 7px 0px 7px;
   }
 }
-***/
-    </style> 
