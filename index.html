@@ -121,36 +121,39 @@
 				<ul class="features">
 					<li class="icon solid fa-hard-hat">
                                                                                                 <h3>Own Safety</h3>
-<p data-tooltip="See something, do something. Never put growth or profit ahead of safety. Invest in best-in-class training, processes, and equipment. Continually reduce and eliminate risks"
-data-tooltip-location="left"><b>Going above and beyond to keep everyone safe </b><i class="icon solid fas fa-arrow-circle-left"></i></p>
+                                                                                                <p class="popup" onclick="myFunction()"><b>Going above and beyond to keep everyone safe </b><i class="icon solid fas fa-arrow-circle-right"></i>
+<span class="popuptext" id="myPopup">See something, do something. Never put growth or profit ahead of safety. Invest in best-in-class training, processes, and equipment. Continually reduce and eliminate risks.</span>
+
                                                                 </li>
                                                                                 <li class="icon solid fa-compass">
                                                                                                 <h3>Do the Right Thing</h3>
-<p data-tooltip="Always act with the best of intentions. Own your actions: Admit your mistakes, fix it and learn from it. Tell the truth at all times, no matter the consequences. Admit your mistakes, fix it and learn from it."
-data-tooltip-location="right"><b>Passionately align our conduct with truth and honesty </b><i class="icon solid fas fa-arrow-circle-right"></i>
+<p class="popup" onclick="myFunction2()"><b>Passionately align our conduct with truth and honesty </b><i class="icon solid fas fa-arrow-circle-right"></i>
+<span class="popuptext" id="myPopup2">Always act with the best of intentions. Own your actions: Admit your mistakes, fix it and learn from it. Tell the truth at all times, no matter the consequences. Admit your mistakes, fix it and learn from it."</span>
                </p>
                                                                                 </li>
 
                                                                                 <li class="icon solid fa-flag-checkered">
                                                                                                 <h3>Win Together</h3>
-                                                                                     <p data-tooltip="Listen to understand. Recognize and celebrate success. Collaborate to overcome challenges and win. Create opportunities for mutual gain."
-data-tooltip-location="left"><b>Victory through partnership </b><i class="icon solid fas fa-arrow-circle-left"></i>
+ <p class="popup" onclick="myFunction3()"><b>Victory through partnership </b><i class="icon solid fas fa-arrow-circle-right"></i>                                                                                  <span class="popuptext" id="myPopup3">Listen to understand. Recognize and celebrate success. Collaborate to overcome challenges and win. Create opportunities for mutual gain.</span>
 </p>
                                                                                 </li>
 
                                                                                 <li class="icon solid fa-dice-d6">
+                                                                                                
+                                                                                                
+                                                                                                
                                                                                                 <h3>Change the Game</h3>
                                                                                              
-                        <p data-tooltip="Think and act like an entrepreneur - Embrace innovation and growth. Identify and drive profit enhancing solutions, celebrate problem solvers. Think and act like an entrepreneur. Fail fast – Learn faster. Celebrate problem solvers." 
-data-tooltip-location="right"> <b>We Improve the status quo by thinking differently </b><i class="icon solid fas fa-arrow-circle-right"></i>
- 
+                       
+<p class="popup" onclick="myFunction4()"><b>We Improve the status quo by thinking differently </b><i class="icon solid fas fa-arrow-circle-right"></i>
+<span class="popuptext" id="myPopup4">Think and act like an entrepreneur - Embrace innovation and growth. Identify and drive profit enhancing solutions, celebrate problem solvers. Think and act like an entrepreneur. Fail fast – Learn faster. Celebrate problem solvers.</span>
 </p>
                                                                                 </li>
                                                                                 <li class="icon solid fa-thumbtack">
                                                                                                 <h3>Execute Exceptionally</h3>
                                                                                                
-                        <p class="popup" onclick="myFunction()"> <b>Create value through a shared commitment to excellence </b><i class="icon solid fas fa-arrow-circle-right"></i>
- <span class="popuptext" id="myPopup"> Know your role, goals, and responsibilities. Continuously measure the metrics that matter. Relentless pursuit of self-improvement. Take initiative to exceed customer expectations. Bring Enthusiasm.
+                        <p class="popup" onclick="myFunction5()"><b>Create value through a shared commitment to excellence </b><i class="icon solid fas fa-arrow-circle-right"></i>
+ <span class="popuptext" id="myPopup5"> Know your role, goals, and responsibilities. Continuously measure the metrics that matter. Relentless pursuit of self-improvement. Take initiative to exceed customer expectations. Bring Enthusiasm.</span>
 </p>
                                                                                 </li>
                                                                                 <!-- li class="icon solid fa-flask">
@@ -180,12 +183,12 @@ data-tooltip-location="right"> <b>We Improve the status quo by thinking differen
 		<!-- Footer -->
 		<footer id="footer">
 			<ul class="icons">
-				<li><a href="#" class="icon brands disable fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands disable fa-twitter"><span class="label">Twitter</span></a></li>
 				<li><a href="#" class="icon brands disable fa-facebook-f"><span class="label">Facebook</span></a></li>
 				<li><a href="#" class="icon brands disable fa-instagram"><span class="label">Instagram</span></a></li>
 				<li><a href="#" class="icon brands disable fa-linkedin"><span class="label">Linkedin</span></a></li>
+                <li><a href="mailto:contact@firsthyperion.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 				<li><a href="#" type="button" role="button" onclick="copyToClipboard('p1')" class="icon solid fa-clipboard"><span class="label">Email</span></a></li>
-				<li><a href="mailto:contact@firsthyperion.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 			</ul>
 			<ul class="copyright">
 				<li>&copy; First Hyperion</li>
@@ -237,8 +240,8 @@ display: none;
 .popup .popuptext {
   visibility: hidden;
   width: relative;
-  background-color: #555;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   text-align: center;
   border-radius: 6px;
   padding: 18px 0;
@@ -287,6 +290,31 @@ function myFunction() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
 }
+
+// When the user clicks on div, open the popup
+function myFunction2() {
+  var popup = document.getElementById("myPopup2");
+  popup.classList.toggle("show");
+}
+
+// When the user clicks on div, open the popup
+function myFunction3() {
+  var popup = document.getElementById("myPopup3");
+  popup.classList.toggle("show");
+}
+
+// When the user clicks on div, open the popup
+function myFunction4() {
+  var popup = document.getElementById("myPopup4");
+  popup.classList.toggle("show");
+}
+
+// When the user clicks on div, open the popup
+function myFunction5() {
+  var popup = document.getElementById("myPopup5");
+  popup.classList.toggle("show");
+}
+
 </script>
 <script>
 function copyToClipboard(elementId) {

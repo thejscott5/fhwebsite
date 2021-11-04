@@ -6,9 +6,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         
-		<link rel="stylesheet" href="https://thejscott5.github.io/mywebsite/assets/css/main.css">
-        <link rel="stylesheet" href="https://thejscott5/mywebsite/main/assets/css/fontawesome-all.min.css">
-		<noscript><link rel="stylesheet" href="https://thejscott5.github.io/mywebsite/assets/css/noscript.css"></noscript>
+		<link rel="stylesheet" href="https://thejscott5.github.io/mywebsite/assets/css/main.css"/>
+         <link rel="stylesheet" href="https://thejscott5.github.io/sandbox/assets/css/fontawesome-all.min.css"/>
+		<noscript><link rel="stylesheet" href="https://thejscott5.github.io/mywebsite/assets/css/noscript.css"/></noscript>
 	</head>
 	<body class="is-preload">
 
@@ -86,17 +86,22 @@
 				<!-- Footer -->
 		<footer id="footer">
 			<ul class="icons">
-<li><a href="#" class="icon brands disable fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands disable fa-twitter"><span class="label">Twitter</span></a></li>
 				<li><a href="#" class="icon brands disable fa-facebook-f"><span class="label">Facebook</span></a></li>
 				<li><a href="#" class="icon brands disable fa-instagram"><span class="label">Instagram</span></a></li>
 				<li><a href="#" class="icon brands disable fa-linkedin"><span class="label">Linkedin</span></a></li>
-				<li><a href= "mailto:contact@firsthyperion.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                <li><a href="mailto:contact@firsthyperion.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="#" type="button" role="button" onclick="copyToClipboard('p1')" class="icon solid fa-clipboard"><span class="label">Email</span></a></li>
 			</ul>
 			<ul class="copyright">
-				
-			<span class="icon solid fa-envelope"></span> contact@firsthyperion.com<br>
-				<span>All Rights Reserved 2021</span><br>
+				  
+                <p class="hidden-p" id="p1">contact@firsthyperion.com</p>
+			<span class="fa fa-clipboard" type="button" href="#" role="button" onclick="copyToClipboard('p1')"></span> contact@firsthyperion.com<br>
+		<span>All Rights Reserved 2021</span><br>
                 <span>&copy; First Hyperion</span><br>
+
+				
+
 			</ul>
 		</footer>
 
@@ -149,6 +154,32 @@ color:#ed4933;
 			<script type="text/javascript" src="https://thejscott5.github.io/mywebsite/assets/js/breakpoints.min.js"></script>
 			<script type="text/javascript" src="https://thejscott5.github.io/mywebsite/assets/js/util.js"></script>
 			<script type="text/javascript" src="https://thejscott5.github.io/mywebsite/assets/js/main.js"></script>
+
+<script>
+function copyToClipboard(elementId) {
+
+  // Create a "hidden" input
+  var aux = document.createElement("input");
+
+  // Assign it the value of the specified element
+  aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+
+  // Append it to the body
+  document.body.appendChild(aux);
+
+  // Highlight its content
+  aux.select();
+
+  // Copy the highlighted text
+  document.execCommand("copy");
+
+  // Remove it from the body
+  document.body.removeChild(aux);
+  
+  alert("contact@firsthyperion.com has been copied to your clipboard");
+}
+
+</script>
 
 	</body>
 </html>

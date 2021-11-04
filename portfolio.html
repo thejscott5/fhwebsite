@@ -1,24 +1,25 @@
 <!DOCTYPE HTML>
-
 <html>
 
 <head>
-	<title>First Hyperion Website</title>
+	<title>First Hyperion</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="https://thejscott5.github.io/fhwebsite/assets/css/main.css">
-	<noscript>
-		<link rel="stylesheet" href="https://thejscott5.github.io/fhwebsite/assets/css/noscript.css">
+  <link rel="stylesheet" href="https://thejscott5.github.io/sandbox/assets/css/main.css"/>
+  <link rel="stylesheet" href="https://thejscott5.github.io/sandbox/assets/css/fontawesome-all.min.css"/>
+
+    <noscript>
+		<link rel="stylesheet" href="https://thejscott5.github.io/sandbox/assets/css/noscript.css" />
 	</noscript>
 </head>
 
-<body class="is-preload">
+<body class="landing is-preload">
 
 	<!-- Page Wrapper -->
 	<div id="page-wrapper">
 
 		<!-- Header -->
-		<header id="header">
+		<header id="header" class="alt">
 			<h1><a href="https://thejscott5.github.io/fhwebsite/index.html">First Hyperion</a></h1>
 			<nav id="nav">
 				<ul>
@@ -27,8 +28,12 @@
 						<div id="menu">
 							<ul>
 								<li><a href="https://thejscott5.github.io/fhwebsite/index.html">Home</a></li>
-								 <li><a href="https://thejscott5.github.io/fhwebsite/valueprop.html">Why First Hyperion?</a></li>
+								  <li><a href="https://thejscott5.github.io/fhwebsite/valueprop.html">Why First Hyperion?</a></li>
 								<li><a href="https://thejscott5.github.io/fhwebsite/team.html">Our Team</a></li>
+								
+              
+								<!-- li><a href="https://thejscott5.github.io/fhwebsite/tools.html">Vision</a></li -->
+								<!-- li><a href="https://thejscott5.github.io/fhwebsite/green.html">Brand</a></li -->
 								<li><a href="https://thejscott5.github.io/fhwebsite/portfolio.html">Our Portfolio</a></li>
 								<li><a href="mailto:contact@firsthyperion.com">Contact</a></li>
 							</ul>
@@ -59,18 +64,23 @@
 		</article>
 
 	<!-- Footer -->
-		<footer id="footer">
+	<footer id="footer">
 			<ul class="icons">
-<li><a href="#" class="icon brands disable fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands disable fa-twitter"><span class="label">Twitter</span></a></li>
 				<li><a href="#" class="icon brands disable fa-facebook-f"><span class="label">Facebook</span></a></li>
 				<li><a href="#" class="icon brands disable fa-instagram"><span class="label">Instagram</span></a></li>
 				<li><a href="#" class="icon brands disable fa-linkedin"><span class="label">Linkedin</span></a></li>
-				<li><a href= "mailto:contact@firsthyperion.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                <li><a href="mailto:contact@firsthyperion.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="#" type="button" role="button" onclick="copyToClipboard('p1')" class="icon solid fa-clipboard"><span class="label">Email</span></a></li>
+				
 			</ul>
 			<ul class="copyright">
 				<li>&copy; First Hyperion</li>
-				<li><span class="icon solid fa-envelope"> contact@firsthyperion.com</span></li>
 				<li>All Rights Reserved 2021</li>
+                <li><i class="fa fa-clipboard" type="button" href="#" role="button" onclick="copyToClipboard('p1')"></i> contact@firsthyperion.com</li>
+                <p class="hidden-p" id="p1">contact@firsthyperion.com</p>
+<!-- i class="fa fa-clipboard" type="button" href="#" role="button" onclick="copyToClipboard('p1')"></i -->
+
 			</ul>
 		</footer>
 
@@ -84,6 +94,9 @@
     cursor: not-allowed;
   opacity: 0.5;
   }
+  .hidden-p {
+display: none;
+}
   .wrapper.style5 {
   background-color: #f2f7f5;
   }
@@ -91,18 +104,45 @@
   
     </style> 
     
+<script>
+function copyToClipboard(elementId) {
+
+  // Create a "hidden" input
+  var aux = document.createElement("input");
+
+  // Assign it the value of the specified element
+  aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+
+  // Append it to the body
+  document.body.appendChild(aux);
+
+  // Highlight its content
+  aux.select();
+
+  // Copy the highlighted text
+  document.execCommand("copy");
+
+  // Remove it from the body
+  document.body.removeChild(aux);
+  
+  alert("contact@firsthyperion.com has been copied to your clipboard");
+}
+
+</script>
+
 	<!-- Scripts -->
-    <script type="text/javascript" src="https://use.fontawesome.com/2ed27cbe98.js"></script>
-    <script type="text/javascript" src="https://thejscott5.github.io/fhwebsite/assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="https://thejscott5.github.io/fhwebsite/assets/js/jquery.scrollex.min.js"></script>
-	<script type="text/javascript" src="https://thejscott5.github.io/fhwebsite/assets/js/jquery.scrolly.min.js"></script>
-	<script type="text/javascript" src="https://thejscott5.github.io/fhwebsite/assets/js/browser.min.js"></script>
-	<script type="text/javascript" src="https://thejscott5.github.io/fhwebsite/assets/js/breakpoints.min.js"></script>
-	<script type="text/javascript"src="https://thejscott5.github.io/fhwebsite/assets/js/util.js"></script>
-	<script type="text/javascript" src="https://thejscott5.github.io/fhwebsite/assets/js/main.js"></script>
+    <script src="https://use.fontawesome.com/2ed27cbe98.js"></script>
+    <script src="https://thejscott5.github.io/sandbox/assets/js/jquery.min.js"></script>
+	<script src="https://thejscott5.github.io/sandbox/assets/js/jquery.scrollex.min.js"></script>
+	<script src="https://thejscott5.github.io/sandbox/assets/js/jquery.scrolly.min.js"></script>
+	<script src="https://thejscott5.github.io/sandbox/assets/js/browser.min.js"></script>
+	<script src="https://thejscott5.github.io/sandbox/assets/js/breakpoints.min.js"></script>
+	<script src="https://thejscott5.github.io/sandbox/assets/js/util.js"></script>
+	<script src="https://thejscott5.github.io/sandbox/assets/js/main.js"></script>
 
 </body>
 
 </html>
+
 
 

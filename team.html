@@ -6,9 +6,9 @@
 	<title>First Hyperion</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="https://thejscott5.github.io/fhwebsite/assets/css/main.css">
+	<link rel="stylesheet" href="https://thejscott5.github.io/sandbox/assets/css/main.css">
 	<noscript>
-		<link rel="stylesheet" href="https://thejscott5.github.io/fhwebsite/assets/css/noscript.css">
+		<link rel="stylesheet" href="https://thejscott5.github.io/sandbox/assets/css/noscript.css">
 	</noscript>
 </head>
 
@@ -113,20 +113,78 @@ Rhoades is a popular speaker on the subject of customer service and how to build
 				</div>
 			</section>
 		</article>
+<div class="fab-container">
+  <div class="fab fab-icon-holder">
+    <i class="fas fa-caret-up"></i>
+  </div>
+  <ul class="fab-options">
+      
 
+
+      
+    <li>
+    <a href="#team-ar"><span class="fab-label">Ann </span>
+      </a><div class="fab-icon-holder"> 
+      </div>
+    </li>
+    
+    <li>
+    <a href="#team-bf"><span class="fab-label">Bill </span>
+      </a><div class="fab-icon-holder"> 
+      </div>
+    </li>
+    
+        <li>
+    <a href="#team-ca"><span class="fab-label">Caren </span>
+      </a><div class="fab-icon-holder"> 
+      </div>
+    </li>
+    
+       <li>
+    <a href="#team-db"><span class="fab-label">Daniel </span>
+      </a><div class="fab-icon-holder"> 
+      </div>
+    </li>
+    
+    <li>
+    <a href="#team-jj"><span class="fab-label">Jason </span>
+      </a><div class="fab-icon-holder"> 
+      </div>
+    </li>
+    <li>
+    <a href="#team-mk"><span class="fab-label">Mark </span>
+      </a><div class="fab-icon-holder"> 
+      </div>
+    </li>
+	   <li>
+    <a href="#team-nk"><span class="fab-label">Nathaniel </span>
+      </a><div class="fab-icon-holder"> 
+      </div>
+    </li>
+      <li>
+    <a href="#team-pf"><span class="fab-label">Pedro </span>
+      </a><div class="fab-icon-holder"> 
+      </div>
+    </li>
+  </ul>
+</div>
 	<!-- Footer -->
 		<footer id="footer">
 			<ul class="icons">
-<li><a href="#" class="icon brands disable fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands disable fa-twitter"><span class="label">Twitter</span></a></li>
 				<li><a href="#" class="icon brands disable fa-facebook-f"><span class="label">Facebook</span></a></li>
 				<li><a href="#" class="icon brands disable fa-instagram"><span class="label">Instagram</span></a></li>
 				<li><a href="#" class="icon brands disable fa-linkedin"><span class="label">Linkedin</span></a></li>
-				<li><a href= "mailto:contact@firsthyperion.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                <li><a href="mailto:contact@firsthyperion.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="#" type="button" role="button" onclick="copyToClipboard('p1')" class="icon solid fa-clipboard"><span class="label">Email</span></a></li>
 			</ul>
 			<ul class="copyright">
 				<li>&copy; First Hyperion</li>
-				<li><a href="">contact@firsthyperion.com <span class="icon solid fa-envelope"></span></a></li>
 				<li>All Rights Reserved 2021</li>
+                <li><i class="fa fa-clipboard" type="button" href="#" role="button" onclick="copyToClipboard('p1')"></i> contact@firsthyperion.com</li>
+                <p class="hidden-p" id="p1">contact@firsthyperion.com</p>
+<!-- i class="fa fa-clipboard" type="button" href="#" role="button" onclick="copyToClipboard('p1')"></i -->
+
 			</ul>
 		</footer>
 
@@ -140,6 +198,11 @@ Rhoades is a popular speaker on the subject of customer service and how to build
     cursor: not-allowed;
   opacity: 0.5;
   }
+  
+  .hidden-p {
+display: none;
+}
+
   .bio-p {
 	margin: 0;
   scroll-margin-top: 1em;
@@ -254,75 +317,47 @@ color: #6b8b77!important;
 
 </style>
  
-    
+ 
+
+<script>
+function copyToClipboard(elementId) {
+
+  // Create a "hidden" input
+  var aux = document.createElement("input");
+
+  // Assign it the value of the specified element
+  aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+
+  // Append it to the body
+  document.body.appendChild(aux);
+
+  // Highlight its content
+  aux.select();
+
+  // Copy the highlighted text
+  document.execCommand("copy");
+
+  // Remove it from the body
+  document.body.removeChild(aux);
+  
+  alert("contact@firsthyperion.com has been copied to your clipboard");
+}
+
+</script>
+
 	<!-- Scripts -->
-    <script type="text/javascript" src="https://use.fontawesome.com/2ed27cbe98.js"></script>
-    <script type="text/javascript" src="https://thejscott5.github.io/fhwebsite/assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="https://thejscott5.github.io/fhwebsite/assets/js/jquery.scrollex.min.js"></script>
-	<script type="text/javascript" src="https://thejscott5.github.io/fhwebsite/assets/js/jquery.scrolly.min.js"></script>
-	<script type="text/javascript" src="https://thejscott5.github.io/fhwebsite/assets/js/browser.min.js"></script>
-	<script type="text/javascript" src="https://thejscott5.github.io/fhwebsite/assets/js/breakpoints.min.js"></script>
-	<script type="text/javascript" src="https://thejscott5.github.io/fhwebsite/assets/js/util.js"></script>
-	<script type="text/javascript" src="https://thejscott5.github.io/fhwebsite/assets/js/main.js"></script>
+    <script src="https://use.fontawesome.com/2ed27cbe98.js"></script>
+    <script src="https://thejscott5.github.io/sandbox/assets/js/jquery.min.js"></script>
+	<script src="https://thejscott5.github.io/sandbox/assets/js/jquery.scrollex.min.js"></script>
+	<script src="https://thejscott5.github.io/sandbox/assets/js/jquery.scrolly.min.js"></script>
+	<script src="https://thejscott5.github.io/sandbox/assets/js/browser.min.js"></script>
+	<script src="https://thejscott5.github.io/sandbox/assets/js/breakpoints.min.js"></script>
+	<script src="https://thejscott5.github.io/sandbox/assets/js/util.js"></script>
+	<script src="https://thejscott5.github.io/sandbox/assets/js/main.js"></script>
 
+</body>
 
-
-<div class="fab-container">
-  <div class="fab fab-icon-holder">
-    <i class="fas fa-caret-up"></i>
-  </div>
-  <ul class="fab-options">
-      
-
-
-      
-    <li>
-    <a href="#team-ar"><span class="fab-label">Ann </span>
-      </a><div class="fab-icon-holder"> 
-      </div>
-    </li>
-    
-    <li>
-    <a href="#team-bf"><span class="fab-label">Bill </span>
-      </a><div class="fab-icon-holder"> 
-      </div>
-    </li>
-    
-        <li>
-    <a href="#team-ca"><span class="fab-label">Caren </span>
-      </a><div class="fab-icon-holder"> 
-      </div>
-    </li>
-    
-       <li>
-    <a href="#team-db"><span class="fab-label">Daniel </span>
-      </a><div class="fab-icon-holder"> 
-      </div>
-    </li>
-    
-    <li>
-    <a href="#team-jj"><span class="fab-label">Jason </span>
-      </a><div class="fab-icon-holder"> 
-      </div>
-    </li>
-    <li>
-    <a href="#team-mk"><span class="fab-label">Mark </span>
-      </a><div class="fab-icon-holder"> 
-      </div>
-    </li>
-	   <li>
-    <a href="#team-nk"><span class="fab-label">Nathaniel </span>
-      </a><div class="fab-icon-holder"> 
-      </div>
-    </li>
-      <li>
-    <a href="#team-pf"><span class="fab-label">Pedro </span>
-      </a><div class="fab-icon-holder"> 
-      </div>
-    </li>
-  </ul>
-</div>
-
+</html>
 
 </body>
 
