@@ -49,13 +49,12 @@
 				<h2>First Hyperion</h2>
 				<h3>Values-Based,
 					Process Driven<br /></h3>
-					
-				<ul class="actions special">
+		
 			
 				      
-		<p style="display:block"><strong>First Hyperion is committed to building lasting partnerships in distribution by remaining true to who we are and what we believe.</strong></br></br>
+		<p style="display:block"><strong>First Hyperion is committed to building lasting partnerships in distribution by remaining true to who we are and what we believe.</strong></p>
 			Through a decentralized leadership approach, we unleash the entrepreneurial spirit of people pursuing their own wealth creation while preserving the invaluable legacy of family-owned businesses. At the core of First Hyperion’s business philosophy, we believe that shared success resides at the intersection of values and process. 
-</p></ul>
+
 			</div>
             <a href="#three" class="more scrolly">Learn More</a>
 		</section>
@@ -118,19 +117,21 @@
 					<li class="icon solid fa-hard-hat">
                                                                                                 <h3>Own Safety</h3>
                                                                                                 <p class="popup" onclick="myFunction()"><b>Going above and beyond to keep everyone safe </b><i class="icon solid fas fa-arrow-circle-right"></i>
-<span class="popuptext" id="myPopup">See something, do something. Never put growth or profit ahead of safety. Invest in best-in-class training, processes, and equipment. Continually reduce and eliminate risks.</span>
+<span class="popuptext" id="myPopup"><i class="far fa-check-circle"></i> See something, do something <span class="brmedium"></span><i class="far fa-check-circle"></i> Never put growth or profit ahead of safety<span class="brmedium"></span><i class="far fa-check-circle"></i> Invest in best-in-class training, processes, and equipment<span class="brmedium"></span><i class="far fa-check-circle"></i> Continually reduce and eliminate risks</span>
 
                                                                 </li>
                                                                                 <li class="icon solid fa-compass">
                                                                                                 <h3>Do the Right Thing</h3>
 <p class="popup" onclick="myFunction2()"><b>Passionately align our conduct with truth and honesty </b><i class="icon solid fas fa-arrow-circle-right"></i>
-<span class="popuptext" id="myPopup2">Always act with the best of intentions. Own your actions: Admit your mistakes, fix it and learn from it. Tell the truth at all times, no matter the consequences. Admit your mistakes, fix it and learn from it."</span>
+<span class="popuptext" id="myPopup2"><i class="far fa-check-circle"></i> Always act with the best of intentions<span class="brmedium"></span><i class="far fa-check-circle"></i> Own your actions: Admit your mistakes, fix it and learn from it<span class="brmedium"></span><i class="far fa-check-circle"></i> Tell the truth at all times, no matter the consequences</span>
                </p>
                                                                                 </li>
 
                                                                                 <li class="icon solid fa-flag-checkered">
                                                                                                 <h3>Win Together</h3>
- <p class="popup" onclick="myFunction3()"><b>Victory through partnership </b><i class="icon solid fas fa-arrow-circle-right"></i>                                                                                  <span class="popuptext" id="myPopup3">Listen to understand. Recognize and celebrate success. Collaborate to overcome challenges and win. Create opportunities for mutual gain.</span>
+ <p class="popup" onclick="myFunction3()"><b>Victory through partnership </b><i class="icon solid fas fa-arrow-circle-right"></i>                                                                                  <span class="popuptext" id="myPopup3"><i class="far fa-check-circle"></i> Listen to understand<span class="brmedium"></span>
+ <i class="far fa-check-circle"></i> Recognize and celebrate success<span class="brmedium"></span><i class="far fa-check-circle"></i> Collaborate to overcome challenges and win<span class="brmedium"></span>
+ <i class="far fa-check-circle"></i> Create opportunities for mutual gain.</span>
 </p>
                                                                                 </li>
 
@@ -142,14 +143,18 @@
                                                                                              
                        
 <p class="popup" onclick="myFunction4()"><b>We Improve the status quo by thinking differently </b><i class="icon solid fas fa-arrow-circle-right"></i>
-<span class="popuptext" id="myPopup4">Think and act like an entrepreneur - Embrace innovation and growth. Identify and drive profit enhancing solutions, celebrate problem solvers. Think and act like an entrepreneur. Fail fast – Learn faster.</span>
+<span class="popuptext" id="myPopup4"><i class="far fa-check-circle"></i> Embrace innovation and growth<span class="brmedium"></span><i class="far fa-check-circle"></i> Identify and drive profit enhancing solutions, celebrate problem solvers<span class="brmedium"></span><i class="far fa-check-circle"></i> Think and act like an entrepreneur<span class="brmedium"></span><i class="far fa-check-circle"></i> Fail fast – Learn faster</span>
 </p>
                                                                                 </li>
                                                                                 <li class="icon solid fa-thumbtack">
                                                                                                 <h3>Execute Exceptionally</h3>
                                                                                                
                         <p class="popup" onclick="myFunction5()"><b>Create value through a shared commitment to excellence </b><i class="icon solid fas fa-arrow-circle-right"></i>
- <span class="popuptext" id="myPopup5"> Know your role, goals, and responsibilities. Continuously measure the metrics that matter. Relentless pursuit of self-improvement. Take initiative to exceed customer expectations. Bring Enthusiasm.</span>
+ <span class="popuptext" id="myPopup5"><i class="far fa-check-circle"></i>Know your role, goals, and responsibilities<span class="brmedium"></span>
+ <i class="far fa-check-circle"></i>Continuously measure the metrics that matter<span class="brmedium"></span>
+ <i class="far fa-check-circle"></i>Relentless pursuit of self-improvement<span class="brmedium"></span>
+ <i class="far fa-check-circle"></i>Take initiative to exceed customer expectations<span class="brmedium"></span>
+ <i class="far fa-check-circle"></i>Bring Enthusiasm</span>
 </p>
                                                                                 </li>
                                                                                 <!-- li class="icon solid fa-flask">
@@ -200,6 +205,21 @@
 
 	<!-- Last minute css -->
 	  <style>
+ .br {
+            display: block;
+            margin-bottom: 0em;
+        }
+          
+        .brmedium {
+            display: block;
+            margin-bottom: 1em;
+        }
+          
+        .brlarge {
+            display: block;
+            margin-bottom: 2em;
+        }
+
       .disable {
       pointer-events: none;
     cursor: not-allowed;
@@ -234,13 +254,14 @@ display: none;
 
 /* The actual popup */
 .popup .popuptext {
+
   visibility: hidden;
   width: relative;
   background-color: #fff;
   color: #000;
-  text-align: center;
+  text-align: left;
   border-radius: 6px;
-  padding: 18px 0;
+  padding: 8px 8px;
   position: absolute;
   z-index: 10;
   bottom: 125%;
