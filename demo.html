@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+                <title>First Hyperion</title>
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://thejscott5.github.io/test/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="https://thejscott5.github.io/test/css/style.css"> <!-- Gem style -->
+	                <noscript>
+            <link rel="stylesheet"href="https://thejscott5.github.io/test/scss/style.css"></noscript>
+
+	<script src="https://thejscott5.github.io/test/js/modernizr.js"></script> <!-- Modernizr -->
+  	
+<style>
+
+
+:root {
+	/*** --type-body: Open Sans, Helvetica, Arial, sans-serif; ***/
+
+	--quote-image-width: 140px;
+	--border-rad: 7px;
+	--accent-color: hsl(322deg 85% 65%);
+	--quote-bg: hsl(0 0% 97%);
+}
+
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+.article {
+	max-width: 900px;
+	margin: auto;
+}
+
+
+
+blockquote {
+	position: relative;
+	margin: 40px 0;
+	padding: 1.6em 2.4em .7em calc(1.4em + var(--quote-image-width));
+	font: italic 1.2rem var(--type-quote);
+	background: var(--quote-bg) no-repeat left / var(--quote-image-width);
+	border-radius: var(--border-rad);
+	border: 2px solid white;
+	box-shadow: 2px 2px 4px hsl(0 0% 0% / 20%);
+	text-indent: 1.6em;
+}
+
+@media (min-width: 768px) {
+	blockquote {
+		margin: 40px 60px;
+	}
+}
+
+blockquote::before {
+	content: "";
+	pointer-events: none;
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: var(--border-rad);
+	box-shadow:
+		inset -2px -2px 1px hsl(0 0% 100%),
+		inset 2px 2px 4px hsl(0 0% 0% / 20%);
+}
+
+blockquote::after {
+	content: "❝";
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: -2px;
+	transform: translate(-50%, -50%);
+	width: 1.3em;
+	height: 1.3em;
+	background: white;
+	box-shadow: 0 4px 5px -1px hsla(0 0% 0% / 20%);
+	border-radius: 999px;
+	display: grid;
+	place-content: center;
+	padding-top: .5em;
+	color: var(--accent-color);
+	font-size: 36px;
+	font-style: normal;
+	text-indent: 0;
+}
+
+.blockquote-author-image {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: var(--quote-image-width);
+	height: 100%;
+	opacity: 0.75;
+	background: var(--accent-color) var(--image) no-repeat center / cover;
+	background-blend-mode: hard-light;
+	border-top-left-radius: var(--border-rad);
+	border-bottom-left-radius: var(--border-rad);
+}
+
+cite {
+	display: block;
+	margin-top: 30px;
+	text-indent: 0;
+	text-align: center;
+	font: bold .9rem var(--type-body);
+	text-transform: uppercase;
+	color: hsl(40 0% 20%);
+}
+
+@media (min-width: 768px) {
+	cite {
+		margin-left: calc(1rem - var(--quote-image-width));
+	}
+}
+
+.cite-last-name {
+	background: var(--accent-color);
+	color: var(--quote-bg);
+}
+
+
+
+
+
+.controls {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	font-size: 0.8em;
+	opacity: 0.7;
+	transition: .2s;
+}
+
+.controls:hover,
+.controls:focus {
+	opacity: 1;
+}
+
+.controls label {
+	font-weight: bold;
+	text-transform: lowercase;
+}
+
+.controls input {
+	display: block;
+	width: 100%;
+	border: 0;
+	outline: none;
+	padding: 0;
+}
+</style>
+</head>
+<body>
+	<main>
+		
+	
+
+		<section class="cd-section cd-placeholder-2">
+			<div class="cd-container">
+				<h2>PORTFOLIO</h2>
+				<p>THE FIRST HYPERION PORTFOLIO OF COMPANIES</p>
+			</div> <!-- cd-container -->
+		</section>
+
+		<section id="cd-team" class="cd-section" style="background-color:#fff">
+			<div class="cd-container">
+					<ul>
+                <li>
+						<a href="#0" data-type="member-1">
+							<figure>
+								<img src="https://thejscott5.github.io/fhwebsite/images/acs/asc-lg.jpg" alt="acs">
+								<div class="cd-img-overlay"><span>Learn More</span></div>
+							</figure>
+
+							<div class="cd-member-info" style="color:#555555">
+								Americhem Sales Corporation <span>Mason, MI</span>
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
+					<!-- li>
+						<a href="#0" data-type="member-3">
+							<figure>
+								<img src=https://thejscott5.github.io/fhwebsite/images/bios/mark.jpg alt="Mark">
+								<div class="cd-img-overlay"><span>View Bio</span></div>
+							</figure>
+
+							<div class="cd-member-info">
+								Mark Kramer <span>Director</span>
+							</div> 
+						</a>
+					</li>
+					
+					<li>
+						<a href="#0" data-type="member-2">
+							<figure>
+								<img src=https://thejscott5.github.io/fhwebsite/images/bios/bill.jpg alt="Bill">
+								<div class="cd-img-overlay"><span>View Bio</span></div>
+							</figure>
+
+							<div class="cd-member-info">
+								William (Bill) Fidler <span>Director</span>
+							</div> 
+						</a>
+					</li-->
+
+					
+				</ul>
+			</div> <!-- cd-container -->
+		</section> <!-- cd-team -->
+
+		<div class="cd-overlay"></div>
+	</main>
+
+	<div class="cd-member-bio member-3">
+		<div class="cd-member-bio-pict">
+			<img src="https://thejscott5.github.io/fhwebsite/images/asc.jpg" alt="Member Bio image">
+		</div> <!-- cd-member-bio-pict -->
+
+		<!-- div class="cd-bio-content">
+			<h1>Meet Mark</h1>
+			<p>Mark has a career spanning over 35 years in the plastics and chemical distribution industry. As President Emeritus, Mark is the retired President and CEO of North American Plastics, a privately-owned group of companies that collectively is the largest independent distributor of semi-finished plastic sheet, rod and tube shapes in North America.</p>
+
+<p>Mark joined Laird Plastics, the largest member of the current North American Plastics Group, as its President in September 2002, and over a 15-year tenure oversaw the doubling of the company and achieved eight-fold growth in operating income.  Laird Plastics followed a 20-year career in chemical distribution that spanned senior executive positions with his family’s business, Kramer Chemicals, its acquirer, Ellis & Everard (“E&E”),  and E&E acquirer, Vopak.</p>
+
+<p>During his tenure in both plastics and chemical distribution, Mark was active in the National Association of Wholesale Distributors and the National Association of Chemical Distributors, at both of which he did tours as Chairman.</p>
+
+<p>Prior to entering chemical distribution, Mark spent seven years serving on active duty with the U.S. Marine Corps.  During that time, he transitioned from infantry to attend law school and became a Judge Advocate and prosecuted or defended more than 150 criminal trials.  Mark served 30 years in the Marine Reserves, ultimately retiring as a Lieutenant Colonel on March 1, 2005.  Mark graduated with a B.A. from Bucknell University and received his J.D. from Washington University, St. Louis, Law School.</p>
+		</div> <!-- cd-bio-content -->
+	</div> <!-- cd-member-bio -->
+
+	
+
+	<div class="cd-member-bio member-1">
+		<div class="cd-member-bio-pict">
+			<img src="https://thejscott5.github.io/fhwebsite/images/acs/asc.jpg" alt="Member Bio image">
+		</div> <!-- cd-member-bio-pict -->
+
+		<div class="cd-bio-content" style="background-color:#555">
+			<h1>Americhem Sales Corporation</h1>
+			<p>Americhem Sales Corporation (ACS) distributes chemicals in the Midwest and the United States. It offers automotive products, including motor oils, heavy duty gear oils, pre-mixed washer solvents, antifreeze products, and high octane racing fuels; metal working fluids, such as cutting oils, drawing compounds, grinding fluids, and soluble oils; specialty products, which include base oils, mineral seal oils, and specialty oils; and caustic soda, sulfuric acid, caustic potash, and hydrogen peroxide. The company also offers olefins, polyolefins, aromatics, alpha olefins, styrenics, specialty chemicals, plastic piping, and polymer resins. In addition, it provides lab testing and custom blending/packaging services.</p>
+<p>Americhem Sales Corporation was founded in 1970 and is based in Mason, Michigan. ACS sells its products through gas stations and dealers. The company was formerly known as Americhem Corporation and changed its name to Americhem Sales Corporation in 1998.</p>
+
+<blockquote>
+		<p style="color:#555">It is not an exaggeration to say that peas can be described as nothing less than perfect spheres of joy.</p>
+		<cite>Eric Egan<span class="cite-last-name">CEO</span></cite>
+		<div class="blockquote-author-image" style="--image: url('https://thejscott5.github.io/fhwebsite/images/bios/eric.jpg')"></div>
+	</blockquote>
+
+
+<span id="team-db"></span>
+
+		</div> <!-- cd-bio-content -->
+	</div> <!-- cd-member-bio -->
+	<a href="#0" class="cd-member-bio-close">Close</a> <!-- close the author bio section -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://thejscott5.github.io/test/js/main.js"></script> <!-- Gem jQuery -->
+<script>
+document.querySelector('.js-accent-color').addEventListener('change', (e) => {
+	document.documentElement.style.setProperty('--accent-color', e.target.value)
+})
+</script>
+</body>
+</html>
