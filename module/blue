@@ -2,9 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish&display=swap">
+
 <style>
 .circle {
   height: 150px;
@@ -42,7 +40,15 @@ background-color: black;
 </style>
 </head>
 <body>
+<div class="row">
 
+<div class='circle column'><span class=""><img src="https://thejscott5.github.io/fhwebsite/images/logo/fh/fh-grey.jpg" alt="fhcolor" style="background-color:transparent;height:60%;margin-left:-10px;margin-top:30px"></span></div>
+<div class='circle column'><span class=""><img src="https://thejscott5.github.io/fhwebsite/images/logo/fh/fh-black.jpg" alt="fhcolor" style="background-color:transparent;height:60%;margin-left:-10px;margin-top:30px"></span></div>
+<div class='circle column'><span class=""><img src="https://thejscott5.github.io/fhwebsite/images/logo/fh/fh-color.jpg" alt="fhcolor" style="background-color:transparent;height:60%;margin-left:-10px;margin-top:30px"></span></div>
+
+</div>
+<br>
+<br>
 
 <div class="row">
 
