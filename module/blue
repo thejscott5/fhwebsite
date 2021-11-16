@@ -17,10 +17,89 @@
 font-family: 'Mulish', sans-serif;
   
 }
+
+.blue {
+background-color: #749CC1;
+
+}
+
+.white {
+background-color: white;
+border-style: solid;
+border-color: black;
+border-width: 1px;
+}
+
+.grey {
+background-color: #555555;
+
+}
+
+.black {
+background-color: black;
+
+}
 </style>
 </head>
 <body>
-<div class='circle' style='background-color:#3f63a1';>#3f63a1</div>
-<div class='circle' style='background-color:#3f63a1';><span class="fh-logo"></span></div>
+
+
+<div class="row">
+
+<div class='circle white column'><span class=""><img src="https://thejscott5.github.io/fhwebsite/images/logo/fh/fh-black.jpg" alt="fhcolor" style="background-color:transparent;height:60%;margin-left:-10px;margin-top:30px;"></span></div>
+
+<div class='circle white column'><span class=""><img src="https://thejscott5.github.io/fhwebsite/images/logo/fh/fh-grey.jpg" alt="fhcolor" style="background-color:transparent;height:60%;margin-left:-10px;margin-top:30px"></span></div>
+
+<div class='circle white column'><span class=""><img src="https://thejscott5.github.io/fhwebsite/images/logo/fh/fh-color.jpg" alt="fhcolor" style="background-color:transparent;height:60%;margin-left:-10px;margin-top:30px"></span></div>
+
+</div>
+<br>
+<br>
+<div class="row">
+
+<div class='circle grey column'><span class=""><img src="https://thejscott5.github.io/fhwebsite/images/logo/fh/fh-white.jpg" alt="fhcolor" style="background-color:transparent;height:60%;margin-left:-10px;margin-top:30px"></span></div>
+<div class='circle grey column'><span class=""><img src="https://thejscott5.github.io/fhwebsite/images/logo/fh/fh-black.jpg" alt="fhcolor" style="background-color:transparent;height:60%;margin-left:-10px;margin-top:30px"></span></div>
+<div class='circle grey column'><span class=""><img src="https://thejscott5.github.io/fhwebsite/images/logo/fh/fh-color.jpg" alt="fhcolor" style="background-color:transparent;height:60%;margin-left:-10px;margin-top:30px"></span></div>
+
+</div>
+<br>
+<br>
+<div class="row">
+<div class='circle blue column'><span class=""><img src="https://thejscott5.github.io/fhwebsite/images/logo/fh/fh-white.jpg" alt="fhcolor" style="background-color:transparent;height:60%;margin-left:-10px;margin-top:30px"></span></div>
+<div class='circle blue column'><span class=""><img src="https://thejscott5.github.io/fhwebsite/images/logo/fh/fh-black.jpg" alt="fhcolor" style="background-color:transparent;height:60%;margin-left:-10px;margin-top:30px"></span></div>
+<div class='circle blue column'><span class=""><img src="https://thejscott5.github.io/fhwebsite/images/logo/fh/fh-grey.jpg" alt="fhcolor" style="background-color:transparent;height:60%;margin-left:-10px;margin-top:30px"></span></div>
+</div>
+<br>
+<br>
+<div class="row">
+
+<div class='circle black column'><span class=""><img src="https://thejscott5.github.io/fhwebsite/images/logo/fh/fh-grey.jpg" alt="fhcolor" style="background-color:transparent;height:60%;margin-left:-10px;margin-top:30px"></span></div>
+
+<div class='circle black column'><span class=""><img src="https://thejscott5.github.io/fhwebsite/images/logo/fh/fh-white.jpg" alt="fhcolor" style="background-color:transparent;height:60%;margin-left:-10px;margin-top:30px"></span></div>
+
+<div class='circle black column'><span class=""><img src="https://thejscott5.github.io/fhwebsite/images/logo/fh/fh-color.jpg" alt="fhcolor" style="background-color:transparent;height:60%;margin-left:-10px;margin-top:30px"></span></div>
+
+</div>
+
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
 </body>
 </html>
